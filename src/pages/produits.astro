@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import produits from "../data/produits.json";
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/produits/*.{jpeg,jpg,png,gif,webp}');
+
+interface Produit {
+    id: string;
+    name: string;
+    desc?: string;
+    img: string;
+    badge?: string;
+}
+
+interface Categorie {
+    id: string;
+    title: string;
+    image: string;
+    description?: string;
+    products: Produit[];
+}
+
+const product = (produits as Categorie[]);
+---
+
+<Layout title="Nos Produits de Soin | Institut Carmabelor à Toulouse" description="Retrouvez les gammes Maria Galland et LPG en vente dans notre institut à Toulouse.">
+    
+    <section class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-serif italic text-primary">Le Comptoir Beauté</h1>
+            <p class="mt-4 text-neutral/70 uppercase tracking-widest text-xs">L'expertise professionnelle à emporter chez vous</p>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div class="grid md:grid-cols-3 gap-8">
+            {produits.map((cat) => (
+                <label for={`modal-${cat.id}`} class="group cursor-pointer">
+                    <span class="sr-only">Ouvrir les produits de la catégorie {cat.title}</span>
+                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-base-200">
+                        
+                        {images[`/src/assets/produits/${cat.image}`] && (
+                            <Image 
+                                src={images[`/src/assets/produits/${cat.image}`]()} 
+                                alt={cat.title}
+                                width={600}
+                                height={800}
+                                loading="eager"
+                                class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
+                            />
+                        )}
+                        
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                            <h2 class="text-2xl font-serif italic">{cat.title}</h2>
+                            <div class="w-0 group-hover:w-12 h-[1px] bg-white transition-all duration-500 mt-2"></div>
+                        </div>
+                    </div>
+                </label>
+            ))}
+        </div>
+    </section>
+
+    <section class="bg-primary/5 py-12 text-center mb-12">
+        <p class="italic text-primary font-serif text-lg px-4">
+            "EXEMPLE DE TEXTE : Pour garantir l'efficacité de vos soins, nos expertes vous conseillent en institut."
+        </p>
+    </section>
+
+    {produits.map((cat) => (
+        <>
+            <input type="checkbox" id={`modal-${cat.id}`} class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle" role="dialog">
+                <div class="modal-box max-w-4xl bg-base-100 p-0 overflow-hidden">
+                    
+                    <div class="p-6 border-b border-base-200 flex justify-between items-center">
+                        <h3 class="text-2xl font-serif italic text-primary">{cat.title}</h3>
+                        <label for={`modal-${cat.id}`} class="btn btn-sm btn-circle btn-ghost" aria-label="Fermer la fenêtre">✕</label>
+                    </div>
+                    
+                    <div class="carousel w-full h-[400px] bg-base-200">
+                        {cat.products.map((prod, index) => (
+                            <div id={`${cat.id}-${prod.id}`} class="carousel-item relative w-full flex flex-col md:flex-row items-center bg-white">
+                                
+                                <div class="w-full md:w-1/2 h-48 md:h-full bg-base-200 flex items-center justify-center p-8">
+                                    {images[`/src/assets/produits/${prod.img}`] ? (
+                                        <Image 
+                                            src={images[`/src/assets/produits/${prod.img}`]()} 
+                                            alt={prod.name}
+                                            width={400} 
+                                            height={400}
+                                            class="max-h-full object-contain mix-blend-multiply"
+                                        />
+                                    ) : (
+                                        <div class="text-xs text-neutral/30 italic">Image non trouvée : {prod.img}</div>
+                                    )}
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 p-8 space-y-4">
+                                    <h4 class="text-xl font-bold uppercase tracking-wide text-neutral">{prod.name}</h4>
+                                    <p class="text-sm text-neutral/70 leading-relaxed italic">{prod.desc}</p>
+
+                                    {('badge' in prod) && prod.badge && (
+                                        <div class="pt-2">
+                                            <span class="badge badge-primary badge-outline font-bold text-[10px] uppercase tracking-widest p-3">
+                                                {prod.badge}
+                                            </span>
+                                        </div>
+                                    )}
+                                </div>
+
+                                {cat.products.length > 1 && (
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2 md:left-5 md:right-5">
+                                        <a href={`#${cat.id}-${cat.products[index === 0 ? cat.products.length - 1 : index - 1].id}`} class="btn btn-circle btn-xs md:btn-sm bg-white/70 border-none shadow text-primary" aria-label="Produit précédent">❮</a>
+                                        <a href={`#${cat.id}-${cat.products[index === cat.products.length - 1 ? 0 : index + 1].id}`} class="btn btn-circle btn-xs md:btn-sm bg-white/70 border-none shadow text-primary" aria-label="Produit suivant">❯</a>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+
+                    <div class="modal-action p-6 border-t border-base-200">
+                        <label for={`modal-${cat.id}`} class="btn btn-primary rounded-full px-8 shadow-md" aria-label="Fermer la fenêtre">Fermer</label>
+                    </div>
+                </div>
+                <label class="modal-backdrop" for={`modal-${cat.id}`}>Close</label>
+            </div>
+        </>
+    ))}
+</Layout>

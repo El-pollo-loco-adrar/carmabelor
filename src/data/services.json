@@ -1,0 +1,462 @@
+[
+    { 
+        "id": "visage", 
+        "name": "Soins du Visage Maria Galand", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Maria Galland Eclat",
+            "price": "51€",
+            "duration": "35 min",
+            "badge": "Coup de coeur"},
+        { 
+            "name": "Maria Galland Mille Sublime Jeunesse", 
+            "price": "136€", 
+            "duration": "90 min",
+            "description": "Un soin alliant luxe suprême et jeunesse globale ciblant tous les signes de l'âge : densité, fermeté ...",
+            "badge": "Nouveau" },
+        { 
+            "name": "Nettoyage/extraction comédons", 
+            "price": "20€", 
+            "duration": "10 min",
+            "description": "Ce nettoyage en profondeur avec une extraction des comédons s'intercale dans un soin du visage au ch ..." },
+        { 
+            "name": "Soin du regard", 
+            "price": "36€", 
+            "duration": "30 min",
+            "description": "Spécialement conçu pour la zone sensible du contour de l’œil, ce soin atténue les ridules et les rid ..." },
+        { 
+            "name": "Soin skin Biosis", 
+            "price": "90€", 
+            "duration": "65 min",
+            "description": "Le soin Skinbiosis rééquilibre la barrière hydrolipidique de votre peau tout en soulageant vos tensi ..." },
+        { 
+            "name": "Soin skin Pulse", 
+            "price": "115€", 
+            "duration": "75 min",
+            "description": "Le soin anti âge skin pulse associe les bienfaits des gammes lumin'éclat, activ'age, et lift'expert ..." },
+            { 
+            "name": "Méthode Mosaïque modelant L'ESSENTIELLE", 
+            "price": "110€", 
+            "duration": "65 min",
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d ..." },
+            { 
+            "name": "Méthode Mosaïque Modelante L'EXCEPTIONNELLE", 
+            "price": "145€", 
+            "duration": "105 min",
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d .." },
+            { 
+            "name": "Méthode Mosaïque Modelante l'originale", 
+            "price": "135€", 
+            "duration": "90 min",
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d .." }
+        ]
+    },
+    { 
+        "id": "lpg", 
+        "name": "LPG Endermologie", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Soin signature VITALITE STRESS SOMMEIL", 
+            "price": "70€", 
+            "duration": "45 min" },
+        { 
+            "name": "Bilan", 
+            "price": "50€", 
+            "duration": "30 min" },
+        { 
+            "name": "Cellu INFINITY 30 min", 
+            "price": "65€", 
+            "duration": "45 min" },
+        { 
+            "name": "Cellu INFINITY 40 min", 
+            "price": "80€", 
+            "duration": "50 min" },
+        { 
+            "name": "Corps 10 min", 
+            "price": "20€", 
+            "duration": "10 min" },
+        { 
+            "name": "Corps 15 min", 
+            "price": "30€", 
+            "duration": "15 min" },
+        { 
+            "name": "Corps 20 min", 
+            "price": "40€", 
+            "duration": "30 min" },
+        { 
+            "name": "Lift visage Infinity 30 min", 
+            "price": "65€", 
+            "duration": "40 min" },
+        { 
+            "name": "Lift visage 10 min", 
+            "price": "25€", 
+            "duration": "15 min" },
+        { 
+            "name": "Lift visage 15 min", 
+            "price": "35€", 
+            "duration": "20 min" },
+        { 
+            "name": "Lift visage 20 min", 
+            "price": "30€", 
+            "duration": "30 min" },
+        { 
+            "name": "Collant", 
+            "price": "25€", 
+            "duration": "5 min" },
+        { 
+            "name": "Sur mesure visage + LPG", 
+            "price": "135€", 
+            "duration": "90 min" }
+        ]
+    },
+    { 
+        "id": "microdermabrasion", 
+        "name": "microdermabrasion", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Micro dermabrasion 1 séance", 
+            "price": "64€", 
+            "duration": "45 min" }
+        ]
+    },
+    { 
+        "id": "epil-cire", 
+        "name": "Epilation à la cire", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "1/2 bras",
+            "price": "21€", 
+            "duration": "15 min" },
+        { 
+            "name": "1/2 jambes",
+            "price": "24€", 
+            "duration": "15 min" },
+        { 
+            "name": "3/4 jambes",
+            "price": "29€", 
+            "duration": "25 min" },
+        { 
+            "name": "Aisselles",
+            "price": "16€", 
+            "duration": "15 min" },
+        { 
+            "name": "Bande",
+            "price": "12€", 
+            "duration": "5 min" },
+        { 
+            "name": "Bras",
+            "price": "23€", 
+            "duration": "20 min" },
+        { 
+            "name": "Cuisses",
+            "price": "25€", 
+            "duration": "20 min" },
+        { 
+            "name": "Jambes entières",
+            "price": "33€", 
+            "duration": "30 min" },
+        { 
+            "name": "Lèvre/nez/menton",
+            "price": "11€", 
+            "duration": "10 min" },
+        { 
+            "name": "Maillot Brésilien",
+            "price": "21€", 
+            "duration": "15 min" },
+        { 
+            "name": "Maillot intégral",
+            "price": "33€", 
+            "duration": "30 min" },
+        { 
+            "name": "Maillot semi intégral",
+            "price": "29€", 
+            "duration": "20 min" },
+        { 
+            "name": "Maillot simple",
+            "price": "17€", 
+            "duration": "15 min" },
+        { 
+            "name": "Sourcils",
+            "price": "13€", 
+            "duration": "15 min" },
+        { 
+            "name": "Visage",
+            "price": "33€", 
+            "duration": "20 min" }
+        ]
+    },
+    { 
+        "id": "epil-cara", 
+        "name": "Epilation au caramel", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "1/2 bras au caramel", 
+            "price": "23€", 
+            "duration": "30 min" },
+        { 
+            "name": "1/2 jambes au caramel", 
+            "price": "26€", 
+            "duration": "40 min" },
+        { 
+            "name": "3/4 jambes au caramel", 
+            "price": "33€", 
+            "duration": "35 min" },
+        { 
+            "name": "Aisselles au caramel", 
+            "price": "16€", 
+            "duration": "15 min" },
+        { 
+            "name": "Bande au caramel", 
+            "price": "12€", 
+            "duration": "5 min" },
+        { 
+            "name": "Bras au caramel", 
+            "price": "25€", 
+            "duration": "40 min" },
+        { 
+            "name": "Cuisses au caramel", 
+            "price": "27€", 
+            "duration": "40 min" },
+        { 
+            "name": "Jambes entières au caramel", 
+            "price": "37€", 
+            "duration": "50 min" },
+        { 
+            "name": "Lèvres/menton/nez au caramel", 
+            "price": "12€", 
+            "duration": "10 min" },
+        { 
+            "name": "Maillot simple au caramel", 
+            "price": "18€", 
+            "duration": "20 min" },
+        { 
+            "name": "Sourcils au caramel", 
+            "price": "14€", 
+            "duration": "15 min" },
+        { 
+            "name": "Visage au caramel", 
+            "price": "33€", 
+            "duration": "20 min" }
+        ]
+    },
+    { 
+        "id": "main", 
+        "name": "Beauté des mains", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Bain de paraffine", 
+            "price": "25€", 
+            "duration": "30 min" },
+        { 
+            "name": "Dépose semi-permanent", 
+            "price": "22€", 
+            "duration": "30 min" },
+        { 
+            "name": "Limage", 
+            "price": "12€", 
+            "duration": "10 min" },
+        { 
+            "name": "Limage + vernis", 
+            "price": "24€", 
+            "duration": "25 min" },
+        { 
+            "name": "Manucurie", 
+            "price": "34€", 
+            "duration": "45 min" },
+        { 
+            "name": "Manucurie + paraffine", 
+            "price": "41€", 
+            "duration": "60 min" },
+        { 
+            "name": "Pose + dépose semi-permanent", 
+            "price": "41€", 
+            "duration": "45 min" },
+        { 
+            "name": "Pose de vernis", 
+            "price": "11€", 
+            "duration": "10 min" },
+        { 
+            "name": "Pose de vernis semi-permanent", 
+            "price": "30€", 
+            "duration": "25 min" }
+        ]
+    },
+    { 
+        "id": "pieds", 
+        "name": "Beauté des pieds", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Beauté des pieds", 
+            "price": "42€", 
+            "duration": "45 min" },
+        { 
+            "name": "Beauté des pieds + paraffine", 
+            "price": "50€", 
+            "duration": "60 min" },
+        { 
+            "name": "Dépose semi permanent", 
+            "price": "20€", 
+            "duration": "25 min" },
+        { 
+            "name": "Pose + dépose vernis semi permanent", 
+            "price": "40€", 
+            "duration": "40 min" },
+        { 
+            "name": "Pose vernis semi permanent", 
+            "price": "29€", 
+            "duration": "30 min" },
+        { 
+            "name": "POSE DE VERNIS(1)", 
+            "price": "11€", 
+            "duration": "15 min" },
+        { 
+            "name": "Soin Yumi Feet", 
+            "price": "38€", 
+            "duration": "40 min" },
+        { 
+            "name": "Yumi Feet et beauté des pieds simple", 
+            "price": "49€", 
+            "duration": "50 min" }
+        ]
+    },
+    { 
+        "id": "radiofrequence", 
+        "name": "Radiofréquence", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "RF 1 séance", 
+            "price": "122€", 
+            "duration": "45 min" },
+        { 
+            "name": "RF 1 séance forfait", 
+            "price": "94", 
+            "duration": "45 min" }
+        ]
+    },
+    { 
+        "id": "cils-sourcils", 
+        "name": "Cils et sourcils", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Teinture des cils", 
+            "price": "26€", 
+            "duration": "30 min" },
+        { 
+            "name": "Teinture des sourcils", 
+            "price": "25€", 
+            "duration": "20 min" }
+        ]
+    },
+    { 
+        "id": "corps", 
+        "name": "Soin du corps", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Gommage corps", 
+            "price": "51€", 
+            "duration": "30 min" },
+        { 
+            "name": "Massage à la bougie", 
+            "price": "41€", 
+            "duration": "30 min" },
+        { 
+            "name": "Modelage", 
+            "price": "38€", 
+            "duration": "30 min" }
+        ]
+    },
+    { 
+        "id": "maquillage", 
+        "name": "Maquillage", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Leçon de maquillage", 
+            "price": "60€", 
+            "duration": "40 min" },
+        { 
+            "name": "Maquillage", 
+            "price": "40€", 
+            "duration": "30 min" }
+        ]
+    },
+    { 
+        "id": "pulverisation", 
+        "name": "Bonne mine Pulvérisation", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Jambes ou Bras", 
+            "price": "20€", 
+            "duration": "15 min" },
+        { 
+            "name": "Visage & décolleté", 
+            "price": "12€", 
+            "duration": "15 min" },
+        { 
+            "name": "Visage & corps", 
+            "price": "32€", 
+            "duration": "30 min" }
+        ]
+    },
+    { 
+        "id": "lumiere", 
+        "name": "Lumière pulsée", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "Lèvres/menton", 
+            "price": "44€", 
+            "duration": "20 min" }
+        ]
+    },
+    { 
+        "id": "homme", 
+        "name": "Epilation Homme", 
+        "icon": "",
+        "services": [
+        { 
+            "name": "1/2 Bras - Homme", 
+            "price": "24€", 
+            "duration": "30 min" },
+        { 
+            "name": "1/2 Jambes - Homme", 
+            "price": "28€", 
+            "duration": "30 min" },
+        { 
+            "name": "3/4 Jambes - Homme", 
+            "price": "33€", 
+            "duration": "30 min" },
+        { 
+            "name": "Aisselles  - Homme", 
+            "price": "19€", 
+            "duration": "15 min" },
+        { 
+            "name": "Bande - Homme", 
+            "price": "14€", 
+            "duration": "10 min" },
+        { 
+            "name": "Bras - Homme", 
+            "price": "27€", 
+            "duration": "30 min" },
+        { 
+            "name": "Dos - Homme", 
+            "price": "32€", 
+            "duration": "30 min" },
+        { 
+            "name": "Jambes entières - Homme", 
+            "price": "38€", 
+            "duration": "45 min" }
+        ]
+    }
+]

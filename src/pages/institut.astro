@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+import photoSalon from '../assets/salon-1.jpg';
+import photoSalon2 from '../assets/salon-2.jpg';
+import photoSalon3 from '../assets/salon-3.jpg';
+import photoSalon4 from '../assets/salon-4.jpg';
+import patron from '../assets/patron.jpg';
+import logoGalland from '../assets/mariagalland-logo2.png';
+import logoLpg from '../assets/lpg-logo.jpg';
+---
+<style>
+    /* Empêche le saut de page brutal lors du clic sur les ancres du carousel */
+    .carousel-item {
+        /* Ajuste cette valeur selon la hauteur de ta Navbar (ex: 100px) */
+        scroll-margin-top: 150px; 
+    }
+
+    /* Optionnel : adoucir le mouvement */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+<Layout 
+    title="L'institut Carmabelor à Toulouse"
+    description="Découvrez l'institut Elégance Carmabelor à Toulouse, son histoire et ses valeurs."
+>
+    <h1 class="text-4xl text-center font-serif text-primary italic mt-12 mb-8">L'institut Carmabelor</h1>
+
+    <!-- CAROUSEL -->
+    <section class="max-w-4xl mx-auto px-4 mb-16">
+        
+        <div class="carousel w-full shadow-2xl rounded-3xl overflow-hidden border-8 border-white">
+            <div id="slide1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                <Image 
+                    src={photoSalon}
+                    alt="L'intérieur chaleureux de l'institut Carmabelor"
+                    width={800}
+                    height={500}
+                    class="w-full h-full object-cover"
+                    loading="eager" 
+                />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
+                    <a href="#slide2" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
+                </div>
+            </div>
+            
+            <div id="slide2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                <Image 
+                    src={photoSalon2}
+                    alt="L'intérieur chaleureux de l'institut Carmabelor"
+                    width={800}
+                    height={500}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
+                    <a href="#slide3" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                <Image 
+                    src={photoSalon3}
+                    alt="L'intérieur chaleureux de l'institut Carmabelor"
+                    width={800}
+                    height={500}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
+                    <a href="#slide4" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
+                </div>
+            </div>
+
+            <div id="slide4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
+                <Image 
+                    src={photoSalon4}
+                    alt="L'intérieur chaleureux de l'institut Carmabelor"
+                    width={800}
+                    height={500}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
+                    <a href="#slide1" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex w-full justify-center gap-2 py-4">
+            <a href="#slide1" class="btn btn-xs btn-circle" aria-label="Voir la photo 1"></a>
+            <a href="#slide2" class="btn btn-xs btn-circle" aria-label="Voir la photo 2"></a>
+            <a href="#slide3" class="btn btn-xs btn-circle" aria-label="Voir la photo 3"></a>
+            <a href="#slide4" class="btn btn-xs btn-circle" aria-label="Voir la photo 4"></a>
+        </div>
+    </section>
+
+    <!-- MOT GERANTE -->
+    <!-- <section class="max-w-6xl mx-auto py-20 px-4">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/20 rounded-2xl -z-10"></div>
+                <Image 
+                    src={patron}
+                    alt="Jessica - Fondatrice de l'institut Elégance Carmabelor"
+                    width={800}
+                    height={500}
+                    class="w-full h-full object-cover"
+                    loading="lazy" 
+                />
+            </div>
+
+            <div class="space-y-6">
+                <span class="text-primary uppercase tracking-[0.2em] text-sm font-semibold">Bienvenue chez vous</span>
+                <h2 class="text-4xl font-serif italic text-neutral">Une parenthèse enchantée au cœur de Toulouse</h2>
+                <p class="text-neutral/80 leading-relaxed">
+                    Depuis plus de [X] ans, j'ai imaginé <strong>Carmabelor</strong> comme un sanctuaire dédié à la beauté originelle. Ici, le temps s'arrête. Mon approche repose sur l'alliance de la haute technologie (LPG Endermologie) et de la gestuelle sensorielle des soins Maria Galland.
+                </p>
+                <p class="text-neutral/80 leading-relaxed italic border-l-4 border-primary/20 pl-4">
+                    "Ma mission est simple : révéler votre élégance naturelle dans une atmosphère de sérénité absolue."
+                </p>
+                <div class="pt-4">
+                    <span class="font-serif text-2xl text-primary italic">Jessica</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- RITUEL EN 3 ETAPES -->
+    <!-- <section class="max-w-5xl mx-auto py-16 px-4 border-t border-base-300">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-serif italic text-primary">Le Rituel Carmabelor</h2>
+            <p class="text-sm opacity-60 uppercase tracking-widest mt-2">Bien plus qu'un soin, une expérience</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center p-4">
+                <span class="text-2xl mb-4 opacity-50">01.</span>
+                <h4 class="font-bold uppercase text-xs tracking-widest mb-2">L'Écoute</h4>
+                <p class="text-sm opacity-70">Chaque rendez-vous débute par un diagnostic personnalisé pour comprendre les besoins uniques de votre peau.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <span class="text-2xl mb-4 opacity-50">02.</span>
+                <h4 class="font-bold uppercase text-xs tracking-widest mb-2">Le Soin</h4>
+                <p class="text-sm opacity-70">L'alliance parfaite de la haute cosmétique Maria Galland et de gestuelles ancestrales relaxantes.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4">
+                <span class="text-2xl mb-4 opacity-50">03.</span>
+                <h4 class="font-bold uppercase text-xs tracking-widest mb-2">L'Éveil</h4>
+                <p class="text-sm opacity-70">Prolongez l'instant avec nos conseils post-soin et une recommandation personnalisée pour votre routine beauté.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- MARQUES PARTENAIRES -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif italic text-primary">L'Excellence à votre service</h2>
+                <div class="w-24 h-[1px] bg-primary/20 mx-auto mt-4"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-neutral/70 leading-relaxed font-light">
+                    Parce que votre peau mérite le meilleur, nous avons sélectionné des partenaires de renommée internationale, leaders de la haute cosmétique et de la technologie esthétique.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center opacity-80">
+                
+                <div class="group flex flex-col items-center space-y-4">
+                    <div class="h-24 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <Image 
+                            src={logoGalland}
+                            alt="Logo Maria Galland Paris"
+                            width={500}
+                            height={500}
+                            class="w-full h-full object-cover"
+                            loading="lazy" 
+                        />
+                    </div>
+                    <p class="text-center text-xs tracking-widest uppercase opacity-60 max-w-[250px]">
+                        L'icône de la cosmétique française pour des soins sur-mesure.
+                    </p>
+                </div>
+
+                <div class="group flex flex-col items-center space-y-4">
+                    <div class="h-24 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <Image 
+                            src={logoLpg}
+                            alt="Logo Maria Galland Paris"
+                            width={500}
+                            height={500}
+                            class="w-full h-full object-cover"
+                            loading="lazy" 
+                        />
+                    </div>
+                    <p class="text-center text-xs tracking-widest uppercase opacity-60 max-w-[250px]">
+                        La haute technologie au service de la beauté naturelle et minceur.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- POURQUOI CHOISIR -->
+    <section class="bg-base-200 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif italic">Pourquoi nous choisir ?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center space-y-4">
+                    <div class="text-4xl">🌿</div>
+                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Expertise Maria Galland</h3>
+                    <p class="text-sm opacity-70">Des protocoles sur-mesure utilisant les produits iconiques de la marque numéro 1 en institut.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-4xl">💆‍♀️</div>
+                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Haute Technologie</h3>
+                    <p class="text-sm opacity-70">Équipée des dernières technologies LPG pour des résultats minceur et anti-âge visibles.</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <div class="text-4xl">✨</div>
+                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Cadre Privilégié</h3>
+                    <p class="text-sm opacity-70">Un espace intimiste et apaisant conçu pour votre confort et votre tranquillité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

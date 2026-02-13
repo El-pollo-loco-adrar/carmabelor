@@ -1,0 +1,96 @@
+[
+    {
+        "id": "visage",
+        "title": "Soins Visage",
+        "image": "salon-1.jpg",
+        "description": "Retrouvez l'expertise Maria Galland chez vous.",
+        "products": [
+        {
+            "id": "v1",
+            "name": "Crème No. 5",
+            "desc": "L'icône Maria Galland pour une régénération intense.",
+            "img": "patron.jpg",
+            "badge": "Best-seller"
+        },
+        {
+            "id": "v2",
+            "name": "Sérum Hydratant 001",
+            "desc": "Un concentré d'hydratation pour un éclat immédiat.",
+            "img": "salon-2.jpg",
+            "badge": "meilleure vente au monde"
+        }
+        ]
+    },
+    {
+        "id": "corps",
+        "title": "Soins corps",
+        "image": "salon-3.jpg",
+        "description": "Tout pour le corps",
+        "products": [
+        {
+            "id": "c1",
+            "name": "Crème No. 14",
+            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesentium sit ab iure rerum rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia.",
+            "img": "salon-4.jpg"
+        },
+        {
+            "id": "c2",
+            "name": "Sérum pour le corps",
+            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesentium sit ab iure rerum rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
+            "img": "patron.jpg"
+        }
+        ]
+    },
+    {
+        "id": "minceur",
+        "title": "Minceur",
+        "image": "salon-2.jpg",
+        "description": "Tout pour le corps",
+        "products": [
+        {
+            "id": "m1",
+            "name": "Crème No. 58",
+            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesent.",
+            "img": "salon-1.jpg"
+        },
+        {
+            "id": "m2",
+            "name": "Sérum pour mincir",
+            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
+            "img": "salon-3.jpg"
+        },
+        {
+            "id": "m3",
+            "name": "Sérum pour mincir au top",
+            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..onsectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi ",
+            "img": "patron.jpg"
+        }
+        ]
+    },
+    {
+        "id": "minceur",
+        "title": "Minceur",
+        "image": "salon-4.jpg",
+        "description": "Tout pour le corps",
+        "products": [
+        {
+            "id": "m1",
+            "name": "Crème No. 58",
+            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesent.",
+            "img": "patron.jpg"
+        },
+        {
+            "id": "m2",
+            "name": "Sérum pour mincir",
+            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
+            "img": "salon-1.jpg"
+        },
+        {
+            "id": "m3",
+            "name": "Sérum pour mincir au top",
+            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..onsectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi ",
+            "img": "salon-2.jpg"
+        }
+        ]
+    }
+]

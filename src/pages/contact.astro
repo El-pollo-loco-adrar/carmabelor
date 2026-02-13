@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+    title="Contactez Carmabelor à Toulouse | Adresse, Horaires & Formulaire de Contact"
+    description="Contactez Carmabelor à Toulouse : adresse, horaires, formulaire de contact pour questions et rendez-vous. Nous sommes là pour vous aider !"
+>
+    <section class="py-12 bg-theme text-primary text-center">
+        <h1 class="text-3xl font-bold text-center mb-10">Contactez-nous</h1>
+        <p class="mt-2 text-lg">Vous avez une question ? Un rendez-vous particulier ? N'hésitez pas à nous contacter !</p>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            
+            <div class="flex flex-col gap-8">
+                <div class="bg-base-200 p-8 rounded-box shadow-sm border border-base-300 space-y-6">
+                    <h1 class="text-3xl font-serif text-primary italic">Nous trouver</h1>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                        <div class="flex items-start gap-3">
+                            <div class="text-primary text-2xl">📍</div>
+                            <div>
+                                <p class="font-bold">Adresse</p>
+                                <p class="text-sm opacity-80 leading-relaxed">
+                                    11 rue du Canard,<br>31000 Toulouse
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="text-primary text-2xl">📞</div>
+                            <div>
+                                <p class="font-bold">Téléphone</p>
+                                <p class="text-sm opacity-80 leading-relaxed">
+                                    05 62 17 00 15
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="text-primary text-2xl">🕔</div>
+                            <div>
+                                <p class="font-bold">Horaires</p>
+                                <ul class="text-xs space-y-1 opacity-80">
+                                    <li><span class="font-semibold">Lun, Mer, Jeu, Ven :</span> 8h30-18h30</li>
+                                    <li><span class="font-semibold">Samedi :</span> 9h-17h <span class="italic">(1er du mois)</span></li>
+                                    <li class="text-error font-medium">Mardi & Dimanche : Fermé</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-grow min-h-[400px] rounded-box shadow-lg overflow-hidden border-4 border-white relative z-10" id="map">
+                    </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-box shadow-xl border border-base-200 flex flex-col">
+                <h2 class="text-3xl font-serif text-primary mb-2 italic">Écrivez-nous</h2>
+                <p class="text-sm text-neutral/60 mb-8 font-medium tracking-wide uppercase">Une question ? Un rendez-vous particulier ?</p>
+                
+                <form
+                    id="contact-form"
+                    class="space-y-5"
+                    action="https://formspree.io/f/ID_ICI"
+                    method="POST"
+                >
+                    <div class="form-control">
+                        <label class="label"><span class="label-text font-bold">Objet de votre demande</span></label>
+                        <select name="objet" class="select select-bordered focus:border-primary w-full bg-base-100" required>
+                            <option disabled selected value="">Choisissez une option...</option>
+                            <option value="devis">Demande de devis</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="lpg">Question LPG Endermologie</option>
+                            <option value="autre">Autre...</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="form-control">
+                            <label class="label"><span class="label-text font-bold">Nom</span></label>
+                            <input name="nom" type="text" placeholder="Ex: Marie Dupont" class="input input-bordered focus:border-primary w-full bg-base-100" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label"><span class="label-text font-bold">Email</span></label>
+                            <input name="email" type="email" placeholder="votre@email.com" class="input input-bordered focus:border-primary w-full bg-base-100" required />
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label"><span class="label-text font-bold">Message</span></label>
+                        <textarea name="message" class="textarea textarea-bordered h-40 focus:border-primary w-full bg-base-100" placeholder="Décrivez votre demande en quelques mots..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-full shadow-md mt-4 group">
+                        Envoyer le message
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="toast" class="hidden fixed bottom-5 right-5 bg-success text-success-content px-6 py-4 rounded-xl shadow-2xl z-50 animate-bounce">
+            ✅ Message envoyé avec succès !
+        </div>
+    </section>
+</Layout>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script>
+    import L from 'leaflet';
+
+    delete (L.Icon.Default.prototype as any)._getIconUrl;
+    L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+    });
+
+    // On attend que le DOM soit chargé
+    const mapElement = document.getElementById('map');
+    
+    if (mapElement) {
+        // 1. Coordonnées de l'institut (Latitude, Longitude)
+        // Tu peux les trouver sur Google Maps en faisant clic droit sur un lieu
+        const lat = 43.598319431600345;
+        const lng = 1.4464186693383447;
+
+        // 2. Initialisation de la carte
+        const map = L.map('map').setView([lat, lng], 15);
+
+        // 3. Chargement des "tuiles" (le design de la carte)
+        // On utilise OpenStreetMap qui est gratuit
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // 4. Ajout du marqueur personnalisé
+        const marker = L.marker([lat, lng]).addTo(map);
+        marker.bindPopup("<b>Carmabelor</b><br>Institut de Beauté").openPopup();
+    }
+</script>
+
+<style>
+    /* Important : La carte doit avoir une hauteur définie */
+    #map {
+        z-index: 1; /* Pour éviter que la navbar passe dessous */
+    }
+</style>
