@@ -1,12 +1,17 @@
+:root {
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    color-scheme: light;
+    }
+}
+
 @import "tailwindcss";
 @plugin "daisyui";
-
-/* CONFIGURATION DU THÈME DAISYUI */
-@plugin "daisyui/theme" {
-    name: "esthétique";
-    default: true;
-    prefersdark: false; /* Souvent mieux en clair pour l'esthétique */
     
+@theme {
 /* 
 --color-primary: boutons et titres
 --color-primary-content: couleur des écritures dans les boutons
@@ -24,6 +29,12 @@
     --color-neutral: #4b5563;
     --color-base-100: #fcfaf8;     /*Couleur de fond du site*/
     
+    --p: var(--color-primary);
+    --pc: var(--color-primary-content);
+    --s: var(--color-secondary);
+    --a: var(--color-accent);
+    --n: var(--color-neutral);
+    --b1: var(--color-base-100);
     
     /* 1. Élégant / Féminin / Luxe */
 
@@ -62,12 +73,21 @@
     --radius-selector: 1rem;
     --radius-field: 0.5rem;
     --radius-box: 1.5rem;
-    }
+}
+
+    /* CONFIGURATION DU THÈME DAISYUI */
+@plugin "daisyui/theme" {
+    name: "esthétique";
+    default: true;
+    prefersdark: false; /* Souvent mieux en clair pour l'esthétique */
+}
 
     /* TYPOGRAPHIE ET RÉGLAGES GLOBAUX */
     @layer base {
-    html {
+    html, body {
         scroll-behavior: smooth;
+        background-color: #fcfaf8 !important; /* Force ton beige */
+        color: #4b5563; /* Force ton gris neutre pour le texte */
     }
 
     body {
