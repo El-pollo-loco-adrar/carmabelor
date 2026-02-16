@@ -16,13 +16,14 @@
 */
 
     /* Couleurs personnalisées */
-    --color-primary: #d4a373;      /* Un doré/nude élégant */
+    --color-primary: #785839;      
     --color-primary-content: #FFFFFF;
+    --color-neutral: #37302E;
+    --color-base-100: #F8F1EC;    
     
-    --color-secondary: #faedcd;    /* Crème doux */
-    --color-accent: #e9edc9;       /* Vert sauge très léger (zen) */
-    --color-neutral: #4b5563;
-    --color-base-100: #fcfaf8;     /*Couleur de fond du site*/
+    /* --color-secondary: #faedcd;    
+    --color-accent: #e9edc9;        */
+
     
     
     /* 1. Élégant / Féminin / Luxe */
@@ -95,14 +96,14 @@
 
 @font-face {
   /* Si tu n'as pas encore chargé Playfair Display */
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/...);
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/...);
 }
 
 .navbar {
   /* Pour que la transition de couleur soit douce au scroll */
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }

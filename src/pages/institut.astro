@@ -2,10 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 
-import photoSalon from '../assets/salon-1.jpg';
-import photoSalon2 from '../assets/salon-2.jpg';
-import photoSalon3 from '../assets/salon-3.jpg';
-import photoSalon4 from '../assets/salon-4.jpg';
+import photoSalon from '../assets/institut/inst1.jpg';
+import photoSalon2 from '../assets/institut/inst2.jpg';
+import photoSalon3 from '../assets/institut/inst3.jpeg';
+import photoSalon4 from '../assets/institut/inst4.jpeg';
 import patron from '../assets/patron.jpg';
 import logoGalland from '../assets/mariagalland-logo2.png';
 import logoLpg from '../assets/lpg-logo.jpg';
@@ -26,81 +26,74 @@ import logoLpg from '../assets/lpg-logo.jpg';
     title="L'institut Carmabelor à Toulouse"
     description="Découvrez l'institut Elégance Carmabelor à Toulouse, son histoire et ses valeurs."
 >
-    <h1 class="text-4xl text-center font-serif text-primary italic mt-12 mb-8">L'institut Carmabelor</h1>
-
-    <!-- CAROUSEL -->
-    <section class="max-w-4xl mx-auto px-4 mb-16">
-        
-        <div class="carousel w-full shadow-2xl rounded-3xl overflow-hidden border-8 border-white">
-            <div id="slide1" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                <Image 
-                    src={photoSalon}
-                    alt="L'intérieur chaleureux de l'institut Carmabelor"
-                    width={800}
-                    height={500}
-                    class="w-full h-full object-cover"
-                    loading="eager" 
-                />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide4" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
-                    <a href="#slide2" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
-                </div>
+    <!-- LIEN PETIT TOU -->
+    <section class="relative pt-12 pb-24 bg-institut-beige/50">
+        <div class="text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-serif text-primary italic mb-4">L'institut Carmabelor</h1>
+            <div class="flex justify-center items-center gap-3">
+                <span class="h-[1px] w-6 bg-primary/20"></span>
+                <a href="https://www.lepetittou.com/le-petit-tou/etablissement/elegance-institut-carmabelor/" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-neutral/50 hover:text-primary transition-all duration-300 group">
+                    Vu dans <span class="font-bold">Le Petit Tou</span> City Guide
+                    <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+                </a>
+                <span class="h-[1px] w-6 bg-primary/20"></span>
             </div>
-            
-            <div id="slide2" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                <Image 
-                    src={photoSalon2}
-                    alt="L'intérieur chaleureux de l'institut Carmabelor"
-                    width={800}
-                    height={500}
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
-                    <a href="#slide3" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
-                </div>
-            </div>
-
-            <div id="slide3" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                <Image 
-                    src={photoSalon3}
-                    alt="L'intérieur chaleureux de l'institut Carmabelor"
-                    width={800}
-                    height={500}
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
-                    <a href="#slide4" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
-                </div>
-            </div>
-
-            <div id="slide4" class="carousel-item relative w-full h-[300px] md:h-[500px]">
-                <Image 
-                    src={photoSalon4}
-                    alt="L'intérieur chaleureux de l'institut Carmabelor"
-                    width={800}
-                    height={500}
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image précédente">❮</a>
-                    <a href="#slide1" class="btn btn-circle btn-ghost bg-white/50 backdrop-blur-sm" aria-label="Image suivante">❯</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="flex w-full justify-center gap-2 py-4">
-            <a href="#slide1" class="btn btn-xs btn-circle" aria-label="Voir la photo 1"></a>
-            <a href="#slide2" class="btn btn-xs btn-circle" aria-label="Voir la photo 2"></a>
-            <a href="#slide3" class="btn btn-xs btn-circle" aria-label="Voir la photo 3"></a>
-            <a href="#slide4" class="btn btn-xs btn-circle" aria-label="Voir la photo 4"></a>
         </div>
     </section>
+
+    <section class="max-w-4xl mx-auto px-4 -mt-12 relative z-20 mb-16">
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="max-w-6xl mx-auto px-2 md:px-4 mb-16">
+    <div class="carousel w-full shadow-2xl rounded-3xl overflow-hidden border-4 md:border-8 border-white">
+        <div id="slide1" class="carousel-item relative w-full h-[400px] md:h-[600px]">
+            <Image 
+                src={photoSalon3}
+                alt="L'intérieur chaleureux de l'institut Carmabelor"
+                width={1200} 
+                height={600}
+                class="w-full h-full object-cover"
+                loading="eager" 
+            />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Image précédente">❮</a>
+                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Image suivante">❯</a>
+            </div>
+        </div>
+        
+        <div id="slide2" class="carousel-item relative w-full h-[400px] md:h-[600px]">
+            <Image src={photoSalon2} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
+                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+            </div>
+        </div>
+
+        <div id="slide3" class="carousel-item relative w-full h-[400px] md:h-[600px]">
+            <Image src={photoSalon} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
+                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+            </div>
+        </div>
+
+        <div id="slide4" class="carousel-item relative w-full h-[400px] md:h-[600px]">
+            <Image src={photoSalon4} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
+                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-full justify-center gap-2 py-4">
+        <a href="#slide1" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 1"></a>
+        <a href="#slide2" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 2"></a>
+        <a href="#slide3" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 3"></a>
+        <a href="#slide4" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 4"></a>
+    </div>
+</section>
 
     <!-- MOT GERANTE -->
     <!-- <section class="max-w-6xl mx-auto py-20 px-4">
@@ -192,15 +185,17 @@ import logoLpg from '../assets/lpg-logo.jpg';
                     <div class="h-24 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
                         <Image 
                             src={logoLpg}
-                            alt="Logo Maria Galland Paris"
+                            alt="Logo LPG Endermologie"
                             width={500}
                             height={500}
-                            class="w-full h-full object-cover"
-                            loading="lazy" 
+                            class="w-full h-full object-contain"
                         />
                     </div>
+                    <div class="px-4 py-1 border border-primary/30 rounded-full bg-primary/5">
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-primary italic">Centre Expert Agréé</span>
+                    </div>
                     <p class="text-center text-xs tracking-widest uppercase opacity-60 max-w-[250px]">
-                        La haute technologie au service de la beauté naturelle et minceur.
+                        Équipé de la nouvelle technologie <strong>LPG Cellu M6 Infinity</strong>.
                     </p>
                 </div>
 
@@ -208,30 +203,55 @@ import logoLpg from '../assets/lpg-logo.jpg';
         </div>
     </section>
 
-    <!-- POURQUOI CHOISIR -->
-    <section class="bg-base-200 py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-serif italic">Pourquoi nous choisir ?</h2>
+    <!-- CITATION DU PETIT TOU -->
+    <section class="max-w-3xl mx-auto px-6 py-16 text-center">
+        <div class="space-y-6">
+            <div class="flex justify-center gap-1 text-primary/40">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-center space-y-4">
-                    <div class="text-4xl">🌿</div>
-                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Expertise Maria Galland</h3>
-                    <p class="text-sm opacity-70">Des protocoles sur-mesure utilisant les produits iconiques de la marque numéro 1 en institut.</p>
-                </div>
-                <div class="text-center space-y-4">
-                    <div class="text-4xl">💆‍♀️</div>
-                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Haute Technologie</h3>
-                    <p class="text-sm opacity-70">Équipée des dernières technologies LPG pour des résultats minceur et anti-âge visibles.</p>
-                </div>
-                <div class="text-center space-y-4">
-                    <div class="text-4xl">✨</div>
-                    <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Cadre Privilégié</h3>
-                    <p class="text-sm opacity-70">Un espace intimiste et apaisant conçu pour votre confort et votre tranquillité.</p>
-                </div>
+            <blockquote class="text-xl md:text-2xl font-serif italic text-neutral leading-relaxed">
+                "Un véritable moment d’évasion où expertise et raffinement se rencontrent. L’accueil chaleureux de Jessica transforme votre visite en un moment unique de bien-être absolu."
+            </blockquote>
+            <div class="flex flex-col items-center">
+                <span class="text-[10px] uppercase tracking-widest font-bold text-primary/70">Le Petit Tou</span>
+                <span class="text-[9px] uppercase tracking-[0.2em] text-neutral/40">City Guide Toulouse</span>
             </div>
         </div>
     </section>
+
+    <!-- POURQUOI CHOISIR -->
+    <section class="bg-base-200 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-serif italic">Pourquoi nous choisir ?</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center space-y-4">
+                <div class="text-4xl">🌿</div>
+                <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Expertise Maria Galland</h3>
+                <p class="text-sm opacity-70">Des protocoles sur-mesure utilisant les produits iconiques de la marque numéro 1 en institut.</p>
+            </div>
+
+            <div class="relative text-center space-y-4 p-6 bg-white/50 rounded-2xl border border-primary/10 shadow-sm md:-translate-y-4">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[9px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full shadow-md">
+                    Pionnier Toulouse
+                </div>
+                
+                <div class="text-4xl pt-2">💎</div>
+                <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Centre Expert LPG</h3>
+                <p class="text-sm opacity-80 leading-relaxed">
+                    <strong>Premier institut à Toulouse</strong> équipé de la nouvelle technologie <strong>Infinity</strong>. Une expertise unique pour des résultats minceur et anti-âge inégalés.
+                </p>
+                <div class="text-[10px] uppercase tracking-widest text-primary/60 font-semibold italic">Technologie Cellu M6 Infinity</div>
+            </div>
+
+            <div class="text-center space-y-4">
+                <div class="text-4xl">✨</div>
+                <h3 class="text-xl font-bold uppercase tracking-widest text-primary">Cadre Privilégié</h3>
+                <p class="text-sm opacity-70">Un espace intimiste et apaisant conçu pour votre confort et votre tranquillité.</p>
+            </div>
+        </div>
+    </div>
+</section>
 </Layout>

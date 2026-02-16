@@ -113,7 +113,7 @@
     },
     { 
         "id": "microdermabrasion", 
-        "name": "microdermabrasion", 
+        "name": "Microdermabrasion", 
         "icon": "",
         "services": [
         { 
@@ -407,17 +407,6 @@
             "name": "Visage & corps", 
             "price": "32€", 
             "duration": "30 min" }
-        ]
-    },
-    { 
-        "id": "lumiere", 
-        "name": "Lumière pulsée", 
-        "icon": "",
-        "services": [
-        { 
-            "name": "Lèvres/menton", 
-            "price": "44€", 
-            "duration": "20 min" }
         ]
     },
     { 
