@@ -3,7 +3,7 @@
 
 /* CONFIGURATION DU THÈME DAISYUI */
 @plugin "daisyui/theme" {
-    name: "esthétique";
+    name: "esthetique";
     default: true;
     prefersdark: false; /* Souvent mieux en clair pour l'esthétique */
     
@@ -16,49 +16,11 @@
 */
 
     /* Couleurs personnalisées */
-    --color-primary: #785839;      
+    --color-primary: #E68A5D;      
     --color-primary-content: #FFFFFF;
     --color-neutral: #37302E;
     --color-base-100: #F8F1EC;    
     
-    /* --color-secondary: #faedcd;    
-    --color-accent: #e9edc9;        */
-
-    
-    
-    /* 1. Élégant / Féminin / Luxe */
-
-     /* --color-base-100: #F8F1EC;        Fond principal (beige) */
-    /* --bg-section: #FFFFFF;    Cartes / sections */
-
-    /* --text-main: #2E2E2E;      Texte principal */
-    /* --text-muted: #6E6E6E;     Texte secondaire */
-
-    /* --primary: #F2C1CC;       Boutons / liens */
-    /* --secondary: #B8A6A0;     Éléments secondaires */
-
-    /* --accent: #D4AF37;        Or (CTA / hover) */
-
-    /* --border: #E4DAD5;        Bordures */
-
-
-    /* 
-    2. Moderne / Minimaliste / Haut de gamme
-        Blanc cassé   #F9F9F9
-        Noir doux     #1E1E1E
-        Gris clair    #E0E0E0
-        Gris foncé    #555555
-        Rose nude     #E6B7B2
-     */
-    /* 
-    3. Chaleureux / Accueillant
-        Pêche         #F7B7A3
-        Abricot       #F4A261
-        Crème         #FFF1DC
-        Terracotta    #C97C5D
-        Marron clair  #8D6E63
-      */
-
     /* Arrondis doux */
     --radius-selector: 1rem;
     --radius-field: 0.5rem;

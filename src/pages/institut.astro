@@ -32,7 +32,7 @@ import logoLpg from '../assets/lpg-logo.jpg';
             <h1 class="text-4xl md:text-5xl font-serif text-primary italic mb-4">L'institut Carmabelor</h1>
             <div class="flex justify-center items-center gap-3">
                 <span class="h-[1px] w-6 bg-primary/20"></span>
-                <a href="https://www.lepetittou.com/le-petit-tou/etablissement/elegance-institut-carmabelor/" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-neutral/50 hover:text-primary transition-all duration-300 group">
+                <a href="https://www.lepetittou.com/le-petit-tou/etablissement/elegance-institut-carmabelor/" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs uppercase tracking-[0.3em] text-neutral/50 hover:text-primary transition-all duration-300 group" aria-label="Lire l'article sur Le Petit Tou (ouvre un nouvel onglet)">
                     Vu dans <span class="font-bold">Le Petit Tou</span> City Guide
                     <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
                 </a>
@@ -57,41 +57,41 @@ import logoLpg from '../assets/lpg-logo.jpg';
                 loading="eager" 
             />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Image précédente">❮</a>
-                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Image suivante">❯</a>
+                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Afficher la photo précédente">❮</a>
+                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white hover:bg-white/50" aria-label="Afficher la photo suivante">❯</a>
             </div>
         </div>
         
         <div id="slide2" class="carousel-item relative w-full h-[400px] md:h-[600px]">
             <Image src={photoSalon2} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
-                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo précédente">❮</a>
+                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo suivante">❯</a>
             </div>
         </div>
 
         <div id="slide3" class="carousel-item relative w-full h-[400px] md:h-[600px]">
             <Image src={photoSalon} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
-                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+                <a href="#slide2" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo précédente">❮</a>
+                <a href="#slide4" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo suivante">❯</a>
             </div>
         </div>
 
         <div id="slide4" class="carousel-item relative w-full h-[400px] md:h-[600px]">
             <Image src={photoSalon4} alt="..." width={1200} height={600} class="w-full h-full object-cover" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image précédente">❮</a>
-                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Image suivante">❯</a>
+                <a href="#slide3" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo précédente">❮</a>
+                <a href="#slide1" class="btn btn-circle btn-ghost bg-white/30 backdrop-blur-md border-none text-white" aria-label="Afficher la photo suivante">❯</a>
             </div>
         </div>
     </div>
 
     <div class="flex w-full justify-center gap-2 py-4">
-        <a href="#slide1" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 1"></a>
-        <a href="#slide2" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 2"></a>
-        <a href="#slide3" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 3"></a>
-        <a href="#slide4" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Photo 4"></a>
+        <a href="#slide1" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Afficher la photo 1 sur 4"></a>
+        <a href="#slide2" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Afficher la photo 2 sur 4"></a>
+        <a href="#slide3" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Afficher la photo 3 sur 4"></a>
+        <a href="#slide4" class="btn btn-xs btn-circle btn-primary btn-outline opacity-50 hover:opacity-100" aria-label="Afficher la photo 4 sur 4"></a>
     </div>
 </section>
 
@@ -169,7 +169,7 @@ import logoLpg from '../assets/lpg-logo.jpg';
                     <div class="h-24 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
                         <Image 
                             src={logoGalland}
-                            alt="Logo Maria Galland Paris"
+                            alt="Logo Maria Galland Paris - Soins cosmétiques haute performance"
                             width={500}
                             height={500}
                             class="w-full h-full object-cover"
@@ -235,7 +235,7 @@ import logoLpg from '../assets/lpg-logo.jpg';
 
             <div class="relative text-center space-y-4 p-6 bg-white/50 rounded-2xl border border-primary/10 shadow-sm md:-translate-y-4">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[9px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full shadow-md">
-                    Pionnier Toulouse
+                    Pionnier à Toulouse
                 </div>
                 
                 <div class="text-4xl pt-2">💎</div>

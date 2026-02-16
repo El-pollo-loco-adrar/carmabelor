@@ -19,29 +19,101 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <section id="incontournables" class="py-16 px-4 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">Nos Incontournables</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="card bg-base-100 shadow-xl border border-base-200">
-                <div class="card-body">
-                <h2 class="card-title text-primary font-serif">Soin Visage Maria Galland</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat eum nemo hic ullam eligendi,</p>
+    <section id="incontournables" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-semibold font-serif italic text-neutral">Nos Incontournables</h2>
+            <div class="w-24 h-[1px] bg-primary/30 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- 1ERE CARD -->
+                        <div class="group relative bg-white rounded-3xl border border-primary/10 shadow-sm hover:shadow-[0_20px_50px_-12px_rgba(217,119,87,0.2)] transition-all duration-500 hover:-translate-y-2 overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2">
+                <div class="flex justify-between items-start mb-4 p-8 pb-0" aria-hidden="true">
+                    <span class="text-4xl">✨</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </div>
+
+                <div class="px-8 pb-8">
+                    <h3 id="title-corps" class="card-title text-2xl font-serif italic text-neutral group-hover:text-primary transition-colors mb-4">
+                        Soins du Visage
+                    </h3>
+                    
+                    <div class="w-8 h-[2px] bg-primary/30 group-hover:w-20 transition-all duration-500" aria-hidden="true"></div>
+                    
+                    <p class="text-neutral/60 text-sm leading-relaxed mt-4">
+                        L'excellence Maria Galland pour révéler l'éclat de votre peau avec des protocoles sur-mesure.
+                    </p>
+                    <div class="pt-4">
+                        <a href="/prestations?category=corps" 
+                            aria-labelledby="title-corps"
+                            class="text-[10px] uppercase tracking-widest font-bold text-primary italic outline-none after:absolute after:inset-0 after:content-['']">
+                            Découvrir l'univers <span class="sr-only">des soins du visage</span> →
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card bg-base-100 shadow-xl border border-base-200">
-                <div class="card-body">
-                <h2 class="card-title text-primary font-serif">Epilation à la cire</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat eum nemo hic ullam eligendi,</p>
+            <!-- 2E CARD -->
+            <div class="group relative bg-white rounded-3xl border border-primary/10 shadow-sm hover:shadow-[0_20px_50px_-12px_rgba(217,119,87,0.2)] transition-all duration-500 hover:-translate-y-2 overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2">
+                <div class="flex justify-between items-start mb-4 p-8 pb-0" aria-hidden="true">
+                    <span class="text-4xl">🌿</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </div>
+
+                <div class="px-8 pb-8">
+                    <h3 id="title-corps" class="card-title text-2xl font-serif italic text-neutral group-hover:text-primary transition-colors mb-4">
+                        Épilation à la cire
+                    </h3>
+                    
+                    <div class="w-8 h-[2px] bg-primary/30 group-hover:w-20 transition-all duration-500" aria-hidden="true"></div>
+                    
+                    <p class="text-neutral/60 text-sm leading-relaxed mt-4">
+                        Une épilation à la cire traditionnelle tout en douceur pour une peau satinée et impeccable.
+                    </p>
+                    <div class="pt-4">
+                        <a href="/prestations?category=corps" 
+                            aria-labelledby="title-corps"
+                            class="text-[10px] uppercase tracking-widest font-bold text-primary italic outline-none after:absolute after:inset-0 after:content-['']">
+                            Consulter les tarifs <span class="sr-only">pour une épilation à la cire</span> →
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="card bg-base-100 shadow-xl border border-base-200">
-                <div class="card-body">
-                <h2 class="card-title text-primary font-serif">Soins du Corps</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat eum nemo hic ullam eligendi,</p>
+            <!-- 3E CARD -->
+            <div class="group relative bg-white rounded-3xl border border-primary/10 shadow-sm hover:shadow-[0_20px_50px_-12px_rgba(217,119,87,0.2)] transition-all duration-500 hover:-translate-y-2 overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2">
+                <div class="flex justify-between items-start mb-4 p-8 pb-0" aria-hidden="true">
+                    <span class="text-4xl">💆‍♀️</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </div>
+
+                <div class="px-8 pb-8">
+                    <h3 id="title-corps" class="card-title text-2xl font-serif italic text-neutral group-hover:text-primary transition-colors mb-4">
+                        Soins du Corps
+                    </h3>
+                    
+                    <div class="w-8 h-[2px] bg-primary/30 group-hover:w-20 transition-all duration-500" aria-hidden="true"></div>
+                    
+                    <p class="text-neutral/60 text-sm leading-relaxed mt-4">
+                        Minceur LPG ou détente absolue, offrez à votre corps une parenthèse de bien-être unique.
+                    </p>
+                    <div class="pt-4">
+                        <a href="/prestations?category=corps" 
+                            aria-labelledby="title-corps"
+                            class="text-[10px] uppercase tracking-widest font-bold text-primary italic outline-none after:absolute after:inset-0 after:content-['']">
+                            Voir les soins <span class="sr-only">de la catégorie corps</span> →
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 </Layout>

@@ -56,7 +56,7 @@ const typedCategories = categories as Category[];
                         class={`category-content space-y-8 animate-fadeIn ${index === 0 ? 'block' : 'hidden'}`}
                     >
                         <div class="flex justify-between items-end border-b-2 border-primary/10 pb-4">
-                            <h2 class="text-3xl font-serif">{cat.name}</h2>
+                            <h2 class="text-3xl font-semibold font-serif">{cat.name}</h2>
                             <span class="text-xs uppercase tracking-widest opacity-60 font-bold">{cat.services.length} prestations</span>
                         </div>
 
@@ -107,30 +107,60 @@ const typedCategories = categories as Category[];
     const buttons = document.querySelectorAll('.category-btn');
     const contents = document.querySelectorAll('.category-content');
 
+    // Fonction réutilisable pour changer de catégorie
+    function switchCategory(targetId: string | null) {
+        if (!targetId) return;
+
+        // 1. Mise à jour de l'état visuel des boutons
+        buttons.forEach(b => {
+            if (b.getAttribute('data-target') === targetId) {
+                b.classList.add('active');
+            } else {
+                b.classList.remove('active');
+            }
+        });
+
+        // 2. Mise à jour de l'affichage du contenu
+        contents.forEach(content => {
+            if (content.id === targetId) {
+                content.classList.remove('hidden');
+                content.classList.add('block');
+            } else {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            }
+        });
+    }
+
+    // --- LOGIQUE AU CLIC ---
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             const targetId = btn.getAttribute('data-target');
+            switchCategory(targetId);
 
-            // 1. Mise à jour des boutons
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            // 2. Mise à jour de l'affichage
-            contents.forEach(content => {
-                if (content.id === targetId) {
-                    content.classList.remove('hidden');
-                    content.classList.add('block');
-                } else {
-                    content.classList.add('hidden');
-                    content.classList.remove('block');
-                }
-            });
-
-            // 3. Optionnel : scroll automatique en haut sur mobile
+            // Optionnel : scroll auto sur mobile
             if (window.innerWidth < 768) {
                 window.scrollTo({ top: 200, behavior: 'smooth' });
             }
         });
+    });
+
+    // --- LOGIQUE AU CHARGEMENT DE LA PAGE ---
+    window.addEventListener('DOMContentLoaded', () => {
+        // On récupère le paramètre "category" dans l'URL (ex: ?category=corps)
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+        
+        if (categoryParam) {
+            // Si le paramètre existe, on active la bonne catégorie
+            switchCategory(categoryParam);
+            
+            // On scrolle doucement vers la partie contenu pour une meilleure expérience
+            const targetElement = document.getElementById(categoryParam);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     });
 </script>
 
