@@ -1,129 +1,91 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import produits from "../data/produits.json";
+import gammes from "../data/produits.json";
 
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/produits/*.{jpeg,jpg,png,gif,webp}');
 
-interface Produit {
-    id: string;
-    name: string;
-    desc?: string;
-    img: string;
-    badge?: string;
-}
-
-interface Categorie {
+interface Gamme {
     id: string;
     title: string;
     image: string;
-    description?: string;
-    products: Produit[];
+    brand: string;
+    description: string;
 }
 
-const product = (produits as Categorie[]);
+const productGammes = (gammes as Gamme[]);
 ---
 
-<Layout title="Nos Produits de Soin | Institut Carmabelor à Toulouse" description="Retrouvez les gammes Maria Galland et LPG en vente dans notre institut à Toulouse.">
+<Layout title="Nos Gammes Maria Galland | Institut Carmabelor" description="Découvrez l'univers des soins Maria Galland Paris disponibles dans votre institut à Toulouse.">
     
     <section class="py-20 max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
             <h1 class="text-4xl md:text-5xl font-serif text-primary italic mb-4">Le Comptoir Beauté</h1>
-            <p class="mt-4 text-neutral/70 uppercase tracking-widest text-xs">L'expertise professionnelle à emporter chez vous</p>
+            <p class="mt-4 text-neutral/70 uppercase tracking-widest text-xs">L'expertise Maria Galland Paris dans votre routine quotidienne</p>
         </div>
 
-        <!-- CATEGORIES -->
-        <div class="grid md:grid-cols-3 gap-8">
-            {produits.map((cat) => (
-                <label for={`modal-${cat.id}`} class="group cursor-pointer">
-                    <span class="sr-only">Ouvrir les produits de la catégorie {cat.title}</span>
-                    <div class="relative overflow-hidden rounded-2xl aspect-[3/4] shadow-md border border-base-200">
-                        
-                        {images[`/src/assets/produits/${cat.image}`] && (
-                            <Image 
-                                src={images[`/src/assets/produits/${cat.image}`]()} 
-                                alt={cat.title}
-                                width={600}
-                                height={800}
-                                loading="eager"
-                                class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
-                            />
-                        )}
-                        
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-                            <h2 class="text-2xl font-serif italic">{cat.title}</h2>
-                            <div class="w-0 group-hover:w-12 h-[1px] bg-white transition-all duration-500 mt-2"></div>
-                        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {productGammes.map((gamme) => (
+                <label 
+                    for={`modal-${gamme.id}`} 
+                    class="group cursor-pointer relative overflow-hidden rounded-2xl aspect-[4/5] shadow-md border border-base-200 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 outline-none"
+                    role="button"
+                    tabindex="0"
+                >
+                    {images[`/src/assets/produits/${gamme.image}`] && (
+                        <Image 
+                            src={images[`/src/assets/produits/${gamme.image}`]()} 
+                            alt={gamme.title}
+                            width={600}
+                            height={800}
+                            class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-110"
+                        />
+                    )}
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent transition-opacity group-hover:opacity-90"></div>
+                    
+                    <div class="absolute inset-0 flex flex-col items-center justify-end text-white p-8 text-center translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <span class="text-[10px] uppercase tracking-[0.3em] opacity-80 mb-2">{gamme.brand}</span>
+                        <h2 class="text-3xl font-serif italic mb-4">{gamme.title}</h2>
+                        <div class="w-12 h-[1px] bg-white/50 mb-4"></div>
+                        <span class="text-[10px] uppercase tracking-widest font-bold border border-white/30 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-colors">
+                            En savoir plus
+                        </span>
                     </div>
                 </label>
             ))}
         </div>
     </section>
 
-    <section class="bg-primary/5 py-12 text-center mb-12">
-        <p class="italic text-primary font-serif text-lg px-4">
-            "Pour garantir l'efficacité de vos soins, n'hésitez pas à nous demander conseilen institut."
-        </p>
-    </section>
-
-    {produits.map((cat) => (
+    {productGammes.map((gamme) => (
         <>
-            <input type="checkbox" id={`modal-${cat.id}`} class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle" role="dialog">
-                <div class="modal-box max-w-4xl bg-base-100 p-0 overflow-hidden">
+            <input type="checkbox" id={`modal-${gamme.id}`} class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle px-4" role="dialog">
+                <div class="modal-box max-w-2xl bg-white p-0 overflow-hidden rounded-3xl">
                     
-                    <div class="p-6 border-b border-base-200 flex justify-between items-center">
-                        <h3 class="text-2xl font-serif italic text-primary">{cat.title}</h3>
-                        <label for={`modal-${cat.id}`} class="btn btn-sm btn-circle btn-ghost" aria-label="Fermer la fenêtre">✕</label>
-                    </div>
-                    
-                    <div class="carousel w-full h-[400px] bg-base-200">
-                        {cat.products.map((prod, index) => (
-                            <div id={`${cat.id}-${prod.id}`} class="carousel-item relative w-full flex flex-col md:flex-row items-center bg-white">
-                                
-                                <div class="w-full md:w-1/2 h-48 md:h-full bg-base-200 flex items-center justify-center p-8">
-                                    {images[`/src/assets/produits/${prod.img}`] ? (
-                                        <Image 
-                                            src={images[`/src/assets/produits/${prod.img}`]()} 
-                                            alt={prod.name}
-                                            width={400} 
-                                            height={400}
-                                            class="max-h-full object-contain mix-blend-multiply"
-                                        />
-                                    ) : (
-                                        <div class="text-xs text-neutral/30 italic">Image non trouvée : {prod.img}</div>
-                                    )}
-                                </div>
-                                
-                                <div class="w-full md:w-1/2 p-8 space-y-4">
-                                    <h4 class="text-xl font-bold uppercase tracking-wide text-neutral">{prod.name}</h4>
-                                    <p class="text-sm text-neutral/70 leading-relaxed italic">{prod.desc}</p>
+                    <div class="p-8 md:p-12 text-center space-y-6">
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-[10px] uppercase tracking-[0.4em] text-primary font-bold">{gamme.brand}</span>
+                            <h3 class="text-3xl md:text-4xl font-serif italic text-neutral">{gamme.title}</h3>
+                            <div class="w-16 h-[1px] bg-primary/20 mt-2"></div>
+                        </div>
+                        
+                        <p class="text-neutral/70 leading-relaxed text-lg font-light italic">
+                            {gamme.description}
+                        </p>
 
-                                    {('badge' in prod) && prod.badge && (
-                                        <div class="pt-2">
-                                            <span class="badge badge-primary badge-outline font-bold text-[10px] uppercase tracking-widest p-3">
-                                                {prod.badge}
-                                            </span>
-                                        </div>
-                                    )}
-                                </div>
-
-                                {cat.products.length > 1 && (
-                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2 md:left-5 md:right-5">
-                                        <a href={`#${cat.id}-${cat.products[index === 0 ? cat.products.length - 1 : index - 1].id}`} class="btn btn-circle btn-xs md:btn-sm bg-white/70 border-none shadow text-primary" aria-label="Produit précédent">❮</a>
-                                        <a href={`#${cat.id}-${cat.products[index === cat.products.length - 1 ? 0 : index + 1].id}`} class="btn btn-circle btn-xs md:btn-sm bg-white/70 border-none shadow text-primary" aria-label="Produit suivant">❯</a>
-                                    </div>
-                                )}
-                            </div>
-                        ))}
+                        <div class="pt-6">
+                            <p class="text-[10px] uppercase tracking-widest text-neutral/40 mb-6">
+                                Conseils personnalisés et vente à l'institut
+                            </p>
+                            <label for={`modal-${gamme.id}`} class="btn btn-primary btn-outline rounded-full px-12 hover:bg-primary hover:text-white transition-all">
+                                Fermer
+                            </label>
+                        </div>
                     </div>
 
-                    <div class="modal-action p-6 border-t border-base-200">
-                        <label for={`modal-${cat.id}`} class="btn btn-primary rounded-full px-8 shadow-md" aria-label="Fermer la fenêtre">Fermer</label>
-                    </div>
                 </div>
-                <label class="modal-backdrop" for={`modal-${cat.id}`}>Close</label>
+                <label class="modal-backdrop" for={`modal-${gamme.id}`}>Close</label>
             </div>
         </>
     ))}

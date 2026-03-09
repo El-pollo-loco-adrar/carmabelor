@@ -1,96 +1,51 @@
 [
     {
-        "id": "visage",
-        "title": "Soins Visage",
+        "id": "nettoyage",
+        "title": "Les Nettoyants",
         "image": "salon-1.jpg",
-        "description": "Retrouvez l'expertise Maria Galland chez vous.",
-        "products": [
-        {
-            "id": "v1",
-            "name": "Crème No. 5",
-            "desc": "L'icône Maria Galland pour une régénération intense.",
-            "img": "patron.jpg",
-            "badge": "Best-seller"
-        },
-        {
-            "id": "v2",
-            "name": "Sérum Hydratant 001",
-            "desc": "Un concentré d'hydratation pour un éclat immédiat.",
-            "img": "salon-2.jpg",
-            "badge": "meilleure vente au monde"
-        }
-        ]
+        "brand": "Maria Galland Paris",
+        "description": "La première étape indispensable pour une peau saine. Maria Galland réinvente le nettoyage avec des textures sensuelles qui respectent l'équilibre cutané tout en éliminant les impuretés et le stress de la journée."
     },
     {
-        "id": "corps",
-        "title": "Soins corps",
-        "image": "salon-3.jpg",
-        "description": "Tout pour le corps",
-        "products": [
-        {
-            "id": "c1",
-            "name": "Crème No. 14",
-            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesentium sit ab iure rerum rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia.",
-            "img": "salon-4.jpg"
-        },
-        {
-            "id": "c2",
-            "name": "Sérum pour le corps",
-            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesentium sit ab iure rerum rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
-            "img": "patron.jpg"
-        }
-        ]
-    },
-    {
-        "id": "minceur",
-        "title": "Minceur",
+        "id": "hydratation",
+        "title": "Gamme Hydratante",
         "image": "salon-2.jpg",
-        "description": "Tout pour le corps",
-        "products": [
-        {
-            "id": "m1",
-            "name": "Crème No. 58",
-            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesent.",
-            "img": "salon-1.jpg"
-        },
-        {
-            "id": "m2",
-            "name": "Sérum pour mincir",
-            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
-            "img": "salon-3.jpg"
-        },
-        {
-            "id": "m3",
-            "name": "Sérum pour mincir au top",
-            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..onsectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi ",
-            "img": "patron.jpg"
-        }
-        ]
+        "brand": "Maria Galland Paris",
+        "description": "Véritable source de fraîcheur, la gamme Hydra'Global redonne vie aux peaux assoiffées. Elle restaure la barrière d'hydratation et stimule l'énergie cellulaire pour un teint repulpé et éclatant de santé."
     },
     {
-        "id": "minceur",
-        "title": "Minceur",
+        "id": "eclat",
+        "title": "Gamme Éclat",
+        "image": "salon-3.jpg",
+        "brand": "Maria Galland Paris",
+        "description": "Lumin'Éclat est la réponse aux vies intenses. Ces soins lissent les premières rides et redonnent instantanément de la luminosité aux teints fatigués grâce à un cocktail de vitamines et d'actifs boosters d'éclat."
+    },
+    {
+        "id": "apaisante",
+        "title": "Gamme Apaisante",
         "image": "salon-4.jpg",
-        "description": "Tout pour le corps",
-        "products": [
-        {
-            "id": "m1",
-            "name": "Crème No. 58",
-            "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi cum praesent.",
-            "img": "patron.jpg"
-        },
-        {
-            "id": "m2",
-            "name": "Sérum pour mincir",
-            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..",
-            "img": "salon-1.jpg"
-        },
-        {
-            "id": "m3",
-            "name": "Sérum pour mincir au top",
-            "desc": "Lorem ipsum dolor sit amet consectetm rem distinctio et sapiente veritatis. Iste, ea? Illo excepturi reiciendis consectetur sapiente vel ex magnam quo, amet minima optio officia..onsectetur, adipisicing elit. Ducimus molestias provident quis facilis doloremque iusto reprehenderit nulla eius nemo, quibusdam porro blanditiis adipisci excepturi ",
-            "img": "salon-2.jpg"
-        }
-        ]
+        "brand": "Maria Galland Paris",
+        "description": "Sensi'Repair offre un réconfort absolu aux peaux les plus fragiles. Une gestuelle douce alliée à des actifs apaisants pour désensibiliser la peau, réduire les rougeurs et renforcer ses défenses naturelles."
+    },
+    {
+        "id": "liftante",
+        "title": "Gamme Liftante",
+        "image": "salon-1.jpg",
+        "brand": "Maria Galland Paris",
+        "description": "L'expertise Lift'Expert redessine l'ovale du visage. Grâce à une technologie de pointe, ces soins agissent sur la fermeté et l'élasticité pour un effet lifting immédiat et des traits visiblement lissés."
+    },
+    {
+        "id": "redensifiante",
+        "title": "Gamme Redensifiante",
+        "image": "salon-2.jpg",
+        "brand": "Maria Galland Paris",
+        "description": "Activ'Age répond aux besoins spécifiques des peaux matures. En ciblant la densité et le confort, cette gamme stimule la vitalité cellulaire pour une peau plus forte, plus souple et parfaitement nourrie."
+    },
+    {
+        "id": "premium",
+        "title": "Ligne Premium",
+        "image": "salon-3.jpg",
+        "brand": "Maria Galland Paris",
+        "description": "Mille : Le summum de la haute cosmétique. L'alliance rare de la truffe blanche et de l'or 24 carats pour une régénération globale. Un soin d'exception pour une peau sublimée et une jeunesse éternelle."
     }
 ]

@@ -13,43 +13,43 @@
             "name": "Maria Galland Mille Sublime Jeunesse", 
             "price": "136€", 
             "duration": "90 min",
-            "description": "Un soin alliant luxe suprême et jeunesse globale ciblant tous les signes de l'âge : densité, fermeté ...",
+            "description": "Un soin alliant luxe suprême et jeunesse globale ciblant tous les signes de l'âge : densité, fermeté, rides lissées, hydratation, nutrition. Ce soin haut de gamme comporte 2 masques qui procurent un éclat incomparable ainsi qu'un effet raffermissant et anti-âge. Grâce aux substances actives utilisées, votre peau est régénérée, lissée et nourrie pour des résultats spectaculaires. Si vous souhaitez bénéficier de la quintessence de l'expertise MARIA GALLAND PARIS, faites-vous chouchouter avec ce soin d'exception. Découvrez les textures somptueuses obtenues grâce à l'association des substances les plus précieuses.",
             "badge": "Nouveau" },
         { 
             "name": "Nettoyage/extraction comédons", 
             "price": "20€", 
             "duration": "10 min",
-            "description": "Ce nettoyage en profondeur avec une extraction des comédons s'intercale dans un soin du visage au ch ..." },
+            "description": "Ce nettoyage en profondeur avec une extraction des comédons s'intercale dans un soin du visage au choix." },
         { 
             "name": "Soin du regard", 
             "price": "36€", 
             "duration": "30 min",
-            "description": "Spécialement conçu pour la zone sensible du contour de l’œil, ce soin atténue les ridules et les rid ..." },
+            "description": "Spécialement conçu pour la zone sensible du contour de l’œil, ce soin atténue les ridules et les rides. Le contour des yeux étant une zone très délicate sujette au gonflement et aux cernes, il demande des soins particuliers. Grâce à ce soin, le contour de vos yeux paraîtra retendu et tonifié, bien hydraté et éclatant de jeunesse." },
         { 
             "name": "Soin skin Biosis", 
             "price": "90€", 
             "duration": "65 min",
-            "description": "Le soin Skinbiosis rééquilibre la barrière hydrolipidique de votre peau tout en soulageant vos tensi ..." },
+            "description": "Le soin Skinbiosis rééquilibre la barrière hydrolipidique de votre peau tout en soulageant vos tensions émotionnelles. Hydrate et apaise." },
         { 
             "name": "Soin skin Pulse", 
             "price": "115€", 
             "duration": "75 min",
-            "description": "Le soin anti âge skin pulse associe les bienfaits des gammes lumin'éclat, activ'age, et lift'expert ..." },
+            "description": "Le soin anti âge skin pulse associe les bienfaits des gammes lumin'éclat, activ'age, et lift'expert pour répondre précisément  aux préoccupations de votre peau et vous apporter des résultats visibles." },
             { 
             "name": "Méthode Mosaïque modelant L'ESSENTIELLE", 
             "price": "110€", 
             "duration": "65 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d ..." },
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." },
             { 
             "name": "Méthode Mosaïque Modelante L'EXCEPTIONNELLE", 
             "price": "145€", 
             "duration": "105 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d .." },
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." },
             { 
             "name": "Méthode Mosaïque Modelante l'originale", 
             "price": "135€", 
             "duration": "90 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se d .." }
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." }
         ]
     },
     { 
