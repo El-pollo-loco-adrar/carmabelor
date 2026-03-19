@@ -39,17 +39,17 @@
             "name": "Méthode Mosaïque modelant L'ESSENTIELLE", 
             "price": "110€", 
             "duration": "65 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." },
-            { 
-            "name": "Méthode Mosaïque Modelante L'EXCEPTIONNELLE", 
-            "price": "145€", 
-            "duration": "105 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." },
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant." },
             { 
             "name": "Méthode Mosaïque Modelante l'originale", 
             "price": "135€", 
             "duration": "90 min",
-            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Essentiel 65min pour les femmes qui veulent des résultats exceptionnels sur mesure le plus rapidement possible . Sans massage restructurant - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense. - L’Exceptionnel 100min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." }
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense." },
+            { 
+            "name": "Méthode Mosaïque Modelante L'EXCEPTIONNELLE", 
+            "price": "145€", 
+            "duration": "105 min",
+            "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Exceptionnel 105min pour les femmes qui rêvent d’une escapade beauté avec le summum de l’efficacité , comprenant un nettoyage profond et un merveilleux massage restructurant." }
         ]
     },
     { 
