@@ -3,22 +3,23 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 
 import index from '../assets/index-photo.jpg';
+import index2 from '../assets/index-photo2.jpg';
 ---
 
 <Layout title="Elégance institut Carmabelor | Institut de Beauté & Bien-être à Toulouse dans le quartier des Carmes">
 
 <section class="hero min-h-[70vh] relative overflow-hidden bg-base-100">
 
-    <Image
-        src={index}
-        alt="L'intérieur chaleureux de l'institut Carmabelor"
-        width={1600}
-        height={900}
-        class="absolute inset-0 w-full h-full object-cover object-center"
-        loading="eager"
-        fetchpriority="high"
-        sizes="100vw"
-    />
+        <Image
+            src={index2}
+            alt="La façade extérieur de l'institut Elégence Carmabelor"
+            width={1600}
+            height={900}
+            class="absolute inset-0 w-full h-full object-cover object-center"
+            loading="eager"
+            fetchpriority="high"
+            sizes="100vw"
+        />
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/40"></div>
