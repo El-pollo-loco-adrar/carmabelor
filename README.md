@@ -44,3 +44,18 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+
+Sur github :
+Settings > Secrets and variables > Actions
+
+Ajoute ces 3 secrets (bouton "New repository secret") :
+
+    FTP_SERVER : ton hôte OVH.
+
+    FTP_USERNAME : ton nom d'utilisateur.
+
+    FTP_PASSWORD : ton mot de passe.
+
+

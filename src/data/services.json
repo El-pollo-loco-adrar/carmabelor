@@ -7,14 +7,13 @@
         { 
             "name": "Maria Galland Eclat",
             "price": "51€",
-            "duration": "35 min",
-            "badge": "Coup de coeur"},
+            "duration": "35 min"
+            },
         { 
             "name": "Maria Galland Mille Sublime Jeunesse", 
             "price": "136€", 
             "duration": "90 min",
-            "description": "Un soin alliant luxe suprême et jeunesse globale ciblant tous les signes de l'âge : densité, fermeté, rides lissées, hydratation, nutrition. Ce soin haut de gamme comporte 2 masques qui procurent un éclat incomparable ainsi qu'un effet raffermissant et anti-âge. Grâce aux substances actives utilisées, votre peau est régénérée, lissée et nourrie pour des résultats spectaculaires. Si vous souhaitez bénéficier de la quintessence de l'expertise MARIA GALLAND PARIS, faites-vous chouchouter avec ce soin d'exception. Découvrez les textures somptueuses obtenues grâce à l'association des substances les plus précieuses.",
-            "badge": "Nouveau" },
+            "description": "Un soin alliant luxe suprême et jeunesse globale ciblant tous les signes de l'âge : densité, fermeté, rides lissées, hydratation, nutrition. Ce soin haut de gamme comporte 2 masques qui procurent un éclat incomparable ainsi qu'un effet raffermissant et anti-âge. Grâce aux substances actives utilisées, votre peau est régénérée, lissée et nourrie pour des résultats spectaculaires. Si vous souhaitez bénéficier de la quintessence de l'expertise MARIA GALLAND PARIS, faites-vous chouchouter avec ce soin d'exception. Découvrez les textures somptueuses obtenues grâce à l'association des substances les plus précieuses."},
         { 
             "name": "Nettoyage/extraction comédons", 
             "price": "20€", 
@@ -44,6 +43,7 @@
             "name": "Méthode Mosaïque Modelante l'originale", 
             "price": "135€", 
             "duration": "90 min",
+            "badge": "Coup de coeur",
             "description": "Découvrez un soin entièrement manuel , incomparable depuis 60 Ans aux résultats exceptionnels ! Se décline en 3 soins: - L’Original 90min pour les femmes qui veulent notre soin classique iconique et ses résultats impressionnants, comprenant un nettoyage relaxant plutôt qu’un nettoyage intense." },
             { 
             "name": "Méthode Mosaïque Modelante L'EXCEPTIONNELLE", 
@@ -108,7 +108,8 @@
         { 
             "name": "Sur mesure visage + LPG", 
             "price": "135€", 
-            "duration": "90 min" }
+            "duration": "90 min",
+            "badge": "Coup de coeur" }
         ]
     },
     { 
@@ -406,7 +407,8 @@
         { 
             "name": "Visage & corps", 
             "price": "32€", 
-            "duration": "30 min" }
+            "duration": "30 min",
+            "badge": "Coup de coeur" }
         ]
     },
     { 

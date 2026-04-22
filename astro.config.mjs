@@ -12,5 +12,5 @@ export default defineConfig({
 
   integrations: [sitemap()],
 
-  site:'https://carambelor.fr',
+  site:'https://www.elegance-carmabelor.com',
 });
